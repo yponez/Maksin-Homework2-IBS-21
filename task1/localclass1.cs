@@ -6,7 +6,7 @@ namespace localclass1
     {
         public static int GetMin(int[] array)
         {
-            int min = 999999999;
+            int min = int.MaxValue;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] < min)
@@ -19,7 +19,7 @@ namespace localclass1
 
         public static int GetMax(int[] array)
         {
-            int max = -999999999;
+            int max = int.MinValue;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] > max)

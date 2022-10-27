@@ -22,14 +22,10 @@ namespace localclass6
 
             for (int i = 0; i < array.Length; i++)
             {
+                newarray[index] = array[i];
                 if (array[i] < 0)
                 {
-                    newarray[index] = array[i];
-                    newarray[index + 1] = array[i];
                     index++;
-                }
-                else
-                {
                     newarray[index] = array[i];
                 }
                 index++;
