@@ -24,16 +24,16 @@ namespace localclass2
 
             return array;
         }
-        public static void Print(int[,,] array, int lenght1, int lenght2, int lenght3)
+        public static void Print(int[,,] array)
         {
-            for (int i = 0; i < lenght1; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
                 Console.WriteLine();
                 Console.WriteLine((i + 1) + ")");
-                for (int j = 0; j < lenght2; j++)
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
                     Console.WriteLine();
-                    for (int k = 0; k < lenght3; k++)
+                    for (int k = 0; k < array.GetLength(2); k++)
                     {
                         Console.Write("[" + array[i, j, k] + "]");
                     }
@@ -42,13 +42,13 @@ namespace localclass2
             }
             Console.WriteLine();
         }
-        public static void ChangeNumbers(int[,,] array, int lenght1, int lenght2, int lenght3)
+        public static void ChangeNumbers(int[,,] array)
         {
-            for (int i = 0; i < lenght1; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                for (int j = 0; j < lenght2; j++)
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    for (int k = 0; k < lenght3; k++)
+                    for (int k = 0; k < array.GetLength(2); k++)
                     {
                         if (array[i, j, k] > 0)
                         {
